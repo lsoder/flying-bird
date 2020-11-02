@@ -16,6 +16,7 @@ function start() {
 /** Set an interval to make the bird "fly" */
 function fly() {
     setInterval(moveBirdToTheRight, 10)
+    setTimeout(moveBirdToTheRight, 1000)
 }
 /** Moves the bird a small step in percentage to the right.  */
 function moveBirdToTheRight() {
@@ -24,7 +25,7 @@ function moveBirdToTheRight() {
     
     // Update position
     left += 0.2;
-    
+
     // Render position
     bird.style.left = left + '%';
 }
